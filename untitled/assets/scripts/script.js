@@ -23,7 +23,6 @@ $(document).ready(function() {
         location.reload();
     }
 
-    // Make the reset button functionality
     $('#resetButton').click(function() {
         resetImages();
     });
