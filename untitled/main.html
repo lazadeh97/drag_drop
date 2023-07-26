@@ -6,6 +6,14 @@
   <link rel="stylesheet" href="/untitled/assets/css/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap 5 CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+          integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 </head>
 <body>
 <div class="container mt-5">
@@ -14,34 +22,34 @@
       <div class="box-container d-flex justify-content-between">
         <div class="box">
           <div class="d-flex flex-column align-items-center">
-            <img src="/untitled/assets/img/cat.jpg" alt="Cat" class="img-thumbnail mini-image">           
-            <img src="/untitled/assets/img/pear.avif" alt="Pear" class="img-thumbnail mini-image">
-            <img src="/untitled/assets/img/kia.webp" alt="KIA" class="img-thumbnail mini-image">
-            <img src="/untitled/assets/img/tv.avif" alt="TV" class="img-thumbnail mini-image">
+            <img src="/untitled/assets/img/cat.jpg" alt="Cat" class="img-thumbnail mini-image draggable" data-header="Animals" data-category="animals">
+            <img src="/untitled/assets/img/pear.webp" alt="Pear" class="img-thumbnail mini-image draggable"  data-header="Fruits" data-category="fruits">
+            <img src="/untitled/assets/img/kia.jpg" alt="KIA" class="img-thumbnail mini-image draggable" data-header="Cars" data-category="cars">
+            <img src="/untitled/assets/img/tv.avif" alt="TV" class="img-thumbnail mini-image draggable" data-header="Electronics" data-category="electronics">
           </div>
         </div>
         <div class="box">
           <div class="d-flex flex-column align-items-center">
-            <img src="/untitled/assets/img/dog.jpg" alt="Dog" class="img-thumbnail mini-image">
-            <img src="/untitled/assets/img/Cherry.jpg" alt="Cherry" class="img-thumbnail mini-image">
-            <img src="/untitled/assets/img/Hyundai.jpg" alt="Hyundai" class="img-thumbnail mini-image">
-            <img src="/untitled/assets/img/phone.jpg" alt="Phone" class="img-thumbnail mini-image">
+            <img src="/untitled/assets/img/dog.jpg" alt="Dog" class="img-thumbnail mini-image draggable" data-header="Animals" data-category="animals">
+            <img src="/untitled/assets/img/Cherry.jpg" alt="Cherry" class="img-thumbnail mini-image draggable"  data-header="Fruits" data-category="fruits">
+            <img src="/untitled/assets/img/Hyundai.jpg" alt="Hyundai" class="img-thumbnail mini-image draggable" data-header="Cars" data-category="cars">
+            <img src="/untitled/assets/img/phone.jpg" alt="Phone" class="img-thumbnail mini-image draggable" data-header="Electronics" data-category="electronics">
           </div>
         </div>
         <div class="box">
           <div class="d-flex flex-column align-items-center">
-            <img src="/untitled/assets/img/Rabbit.jpg" alt="Rabbit" class="img-thumbnail mini-image">
-            <img src="/untitled/assets/img/apple.webp" alt="Apple" class="img-thumbnail mini-image">
-            <img src="/untitled/assets/img/bmw.webp" alt="BMW" class="img-thumbnail mini-image">
-            <img src="/untitled/assets/img/computer.webp" alt="Computer" class="img-thumbnail mini-image">
+            <img src="/untitled/assets/img/Rabbit.jpg" alt="Rabbit" class="img-thumbnail mini-image draggable" data-header="Animals" data-category="animals">
+            <img src="/untitled/assets/img/apple.webp" alt="Apple" class="img-thumbnail mini-image draggable"  data-header="Fruits" data-category="fruits">
+            <img src="/untitled/assets/img/bmw.webp" alt="BMW" class="img-thumbnail mini-image draggable" data-header="Cars" data-category="cars">
+            <img src="/untitled/assets/img/computer.webp" alt="Computer" class="img-thumbnail mini-image draggable" data-header="Electronics" data-category="electronics">
           </div>
         </div>
         <div class="box">
           <div class="d-flex flex-column align-items-center">
-            <img src="/untitled/assets/img/rat.jpg" alt="Rat" class="img-thumbnail mini-image">
-            <img src="/untitled/assets/img/Strawberry.jpg" alt="Strawberry" class="img-thumbnail mini-image">
-            <img src="/untitled/assets/img/honda.jpg" alt="Honda" class="img-thumbnail mini-image">
-            <img src="/untitled/assets/img/headphone.jpg" alt="Headset" class="img-thumbnail mini-image">
+            <img src="/untitled/assets/img/rat.jpg" alt="Rat" class="img-thumbnail mini-image draggable" data-header="Animals" data-category="animals">
+            <img src="/untitled/assets/img/Strawberry.jpg" alt="Strawberry" class="img-thumbnail mini-image draggable"  data-header="Fruits" data-category="fruits">
+            <img src="/untitled/assets/img/honda.jpg" alt="Honda" class="img-thumbnail mini-image draggable" data-header="Cars" data-category="cars">
+            <img src="/untitled/assets/img/headphone.jpg" alt="Headset" class="img-thumbnail mini-image draggable" data-header="Electronics" data-category="electronics">
           </div>
         </div>
       </div>
@@ -59,10 +67,7 @@
                         Fruits
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item"></li>
-                        <li class="list-group-item"></li>
-                        <li class="list-group-item"></li>
-                        <li class="list-group-item"></li>
+                        <li class="list-group-item droppable" data-accepted-category="fruits" data-header="Fruits"></li>
                     </ul>
                 </div>
             </div>
@@ -74,10 +79,7 @@
                         Electronics
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item"></li>
-                        <li class="list-group-item"></li>
-                        <li class="list-group-item"></li>
-                        <li class="list-group-item"></li>
+                        <li class="list-group-item droppable" data-accepted-category="electronics" data-header="Electronics"></li>
                     </ul>
                 </div>
             </div>
@@ -91,10 +93,7 @@
                         Animals
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item"></li>
-                        <li class="list-group-item"></li>
-                        <li class="list-group-item"></li>
-                        <li class="list-group-item"></li>
+                        <li class="list-group-item droppable" data-accepted-category="animals" data-header="Animals"></li>
                     </ul>
                 </div>
             </div>
@@ -105,17 +104,23 @@
                     <div class="card-header">
                         Cars
                     </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item"></li>
-                        <li class="list-group-item"></li>
-                        <li class="list-group-item"></li>
-                        <li class="list-group-item"></li>
+                    <ul class="list-group list-group-flush" >
+                        <li class="list-group-item droppable" data-accepted-category="cars" data-header="Cars"></li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
+    <div class="container mt-2">
+        <div class="row">
+            <div class="col-12">
+                <button class="btn btn-labeled btn-info" id="resetButton">
+                    <span class="btn-label"><i class="fa fa-refresh"></i></span>Refresh</button>
+            </div>
+        </div>
+    </div>
 </div>
+<script src="/untitled/assets/scripts/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
